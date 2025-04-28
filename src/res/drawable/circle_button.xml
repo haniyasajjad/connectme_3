@@ -1,0 +1,36 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Circle (Outline) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="16dp"
+                android:color="#3E2C1A" /> <!-- Light gray border -->
+        </shape>
+    </item>
+
+    <!-- Inner Circle -->
+    <item
+        android:top="7dp"
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFF" /> <!-- White inner circle -->
+        </shape>
+    </item>
+
+    <!-- Inner Circle -->
+    <item
+        android:top="12dp"
+        android:bottom="12dp"
+        android:left="12dp"
+        android:right="12dp">
+        <shape android:shape="oval">
+            <solid android:color="#3E2C1A" /> <!-- White inner circle -->
+        </shape>
+    </item>
+
+
+</layer-list>
