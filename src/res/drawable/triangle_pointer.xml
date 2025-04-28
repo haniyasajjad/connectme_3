@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="25dp"
+    android:height="17dp"
+    android:viewportWidth="10"
+    android:viewportHeight="10">
+    <!--
+      This path draws a triangle pointing to the left.
+      Adjust the pathData if you want a different orientation.
+    -->
+    <path
+        android:fillColor="@android:color/white"
+        android:strokeColor="#463121"
+        android:strokeWidth="2.5"
+        android:pathData="M13,0 L4,5 L13,10 Z" /> <!-- Changed M10 to M11 for white top space -->
+
+</vector>
