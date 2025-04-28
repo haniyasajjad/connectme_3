@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbletop"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbletop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:src="@drawable/two_lines"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"/>
+
+    </RelativeLayout>
+
+    <!-- Left Speech Bubble -->
+    <RelativeLayout
+        android:id="@+id/leftbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="105dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbleleft"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbleleft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="137dp"
+        android:padding="3dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:background="@android:color/white">
+
+
+        <View
+            android:id="@+id/textBubble"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <!-- Triangle pointer -->
+        <ImageView
+            android:id="@+id/trianglePointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubble"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:src="@drawable/smiley"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+
+
+    </RelativeLayout>
+
+    <!-- Remaining below content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginTop="240dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <!-- if we want to add everthing in the middle in the layout then use above:  android:gravity="center"  -->
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Great!"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Subtext -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="We're so excited to get you onboard!"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <!-- Username Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Name"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/username"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textSize="16sp" />
+        <!-- Password Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/phone"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Phone Number"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/email"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Email"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/editbox_background"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="By clicking Agree and continue below, I agree to"
+            android:textColor="#463121"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="none"
+            android:text="@string/terms_of_service"
+            android:textColor="#463121"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="-20dp"
+            android:text="and"
+            android:textColor="#463121"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="-20dp"
+            android:autoLink="none"
+            android:text="@string/privacy_policy"
+            android:textColor="#463121"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#463121"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Already have an account?"
+            android:textColor="#463121"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="-19dp"
+            android:text="Login"
+            android:textColor="#463121"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

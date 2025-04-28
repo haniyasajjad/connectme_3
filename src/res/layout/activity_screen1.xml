@@ -1,0 +1,131 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- Existing Bubbles -->
+
+
+    <!-- Top Speech Bubble -->
+    <RelativeLayout
+        android:id="@+id/topbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:padding="16dp"
+        android:layout_marginTop="-82dp"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbletop"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbletop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:src="@drawable/two_lines"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"/>
+
+    </RelativeLayout>
+
+    <!-- Left Speech Bubble -->
+    <RelativeLayout
+        android:id="@+id/leftbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="51dp"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbleleft"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbleleft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:padding="3dp"
+        android:background="@android:color/white">
+
+
+        <View
+            android:id="@+id/textBubble"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <!-- Triangle pointer -->
+        <ImageView
+            android:id="@+id/trianglePointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubble"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:src="@drawable/smiley"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/connectMeText"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="ConnectMe"
+        android:textSize="40sp"
+        android:textColor="#463121"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
+        />
+
+
+
+
+</FrameLayout>

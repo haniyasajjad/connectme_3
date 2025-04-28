@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:padding="16dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbletop"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbletop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:src="@drawable/two_lines"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"/>
+
+    </RelativeLayout>
+
+    <!-- Left Speech Bubble -->
+    <RelativeLayout
+        android:id="@+id/leftbubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="95dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/textBubbleleft"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubbleleft"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:src="@drawable/heart"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="177dp"
+        android:padding="3dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:background="@android:color/white">
+
+
+        <View
+            android:id="@+id/textBubble"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:background="@drawable/text_message"/>
+
+        <!-- Triangle pointer -->
+        <ImageView
+            android:id="@+id/trianglePointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle_pointer"
+            android:layout_below="@id/textBubble"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2.5dp"
+            android:rotation="-90"/>
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:src="@drawable/smiley"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+
+
+    </RelativeLayout>
+
+    <!-- Remaining below content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="644dp"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <!-- if we want to add everthing in the middle in the layout then use above:  android:gravity="center"  -->
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Welcome!"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Subtext -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="We're happy to see you. Please login to\ncontinue"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <!-- Username Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/usernameField"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textSize="19sp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Password"
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="19sp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:gravity="end"
+            android:text="Forgot Password?"
+            android:textColor="#463121"
+            android:textSize="14sp" />
+
+        <!-- Login Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#463121"
+            android:text="Login"
+            android:id="@+id/login_button"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Divider Line with Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  or continue with  "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Social Media Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/g" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/apple" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/facebook" />
+            <!-- Register Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-230dp"
+                android:layout_marginTop="110dp"
+                android:text="Don't have an account? "
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:text="Register"
+                android:textColor="#463121"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

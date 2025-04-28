@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Top Bar: Back Icon and Profile Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="16dp"
+        >
+
+        <!-- Back Icon -->
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_back" />
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OliviaD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginStart="8dp" />
+
+        <!-- Edit Icon (Far Right) -->
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_edit"
+            android:layout_gravity="end"
+            android:layout_marginLeft="230dp"/>
+    </LinearLayout>
+
+
+    <!-- Tabs: DMs and Requests -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <!-- DMs Tab -->
+        <TextView
+            android:id="@+id/tab_dms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dms"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="20dp"/>
+
+        <!-- Requests Tab -->
+        <TextView
+            android:id="@+id/tab_requests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/requests"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="210dp"/>
+    </LinearLayout>
+
+
+    <!-- Tabs: DMs and Requests -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Search for Dms"
+            android:background="@drawable/search_background"
+
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <!-- RecyclerView for User List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

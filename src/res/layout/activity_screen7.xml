@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/chat_background">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="16dp"
+        >
+
+        <!-- Back Icon -->
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_grey" />
+
+
+
+        <!-- User Name and View Profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Henry Benjamin"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFF" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="50dp">
+        <!-- Profile Picture -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp">
+
+            <ImageView
+                android:id="@+id/profile_image2"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile1" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/view_profile"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="View Profile"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="110dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3B2F24"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Chat Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <!-- Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+
+        <!-- Input Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:background="@drawable/rounded_corner_background_s9"
+            android:backgroundTint="#3B2F24">
+
+
+
+
+
+            <!-- Message Input Field -->
+            <EditText
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Typing..."
+                android:textColorHint="@color/view_profile"
+                android:background="#3B2F24"
+                />
+
+
+            <!-- Send Button -->
+            <ImageView
+                android:id="@+id/attachment_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/attach_icon"
+                android:layout_marginLeft="-70dp"
+                android:layout_marginTop="15dp"
+
+                android:clickable="true"
+                android:focusable="true" />
+            <!-- Send Button -->
+            <ImageView
+                android:id="@+id/send_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_send2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+
+                android:clickable="true"
+                android:focusable="true" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

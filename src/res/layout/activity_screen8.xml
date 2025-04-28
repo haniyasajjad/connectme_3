@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Henry Benjamin"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile1" />
+        </androidx.cardview.widget.CardView>
+        <!-- Call Duration -->
+        <TextView
+            android:id="@+id/call_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:32"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+
+
+    <!-- Call Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_corner_background"
+        >
+        <!-- Options Button -->
+        <ImageView
+            android:id="@+id/options_call_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_call_options"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="2dp"/>
+        <!-- Video call Button -->
+        <ImageView
+            android:id="@+id/video_call_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_video_call"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp" />
+
+
+        <!-- Speaker Button -->
+        <ImageView
+            android:id="@+id/speaker_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_speaker"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp" />
+
+        <!-- Mute Button -->
+        <ImageView
+            android:id="@+id/mute_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_mute"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp" />
+
+
+        <!-- End Call Button -->
+        <ImageView
+            android:id="@+id/end_call_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_end_call"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+</RelativeLayout>
