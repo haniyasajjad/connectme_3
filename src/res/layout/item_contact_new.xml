@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!-- Profile Picture -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile1" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Name and Speech Bubble in RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Henry School"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Speech Bubble Icon -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/some_button"
+            android:id="@+id/accept_button"
+            android:layout_alignParentEnd="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/some_button"
+            android:id="@+id/reject_button"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/accept_button"/>
+    </RelativeLayout>
+</LinearLayout>

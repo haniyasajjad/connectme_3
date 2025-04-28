@@ -1,0 +1,136 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/crossk_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+
+
+    <!-- Top Bar -->
+    <TextView
+        android:id="@+id/tvNewPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New post"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textColor="#8E5E42"
+        app:layout_constraintTop_toTopOf="@id/tvNewPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Main Image Preview -->
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="340dp"
+        android:layout_height="420dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/tvNewPost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile1"/>
+
+
+
+    <!-- Recent Photos Text -->
+    <TextView
+        android:id="@+id/tvRecents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recents"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:src="@drawable/ic_back"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/tvRecents"
+        app:layout_constraintStart_toEndOf="@id/tvRecents"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Back Button" />
+
+    <!-- Icon Container -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/tvRecents"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Layers Icon -->
+        <ImageView
+            android:id="@+id/icon_layers"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_layers"
+            android:contentDescription="Layers Icon"
+            android:layout_marginEnd="20dp"
+            android:rotation="-360"
+            />
+
+        <!-- Camera Icon -->
+        <ImageView
+            android:id="@+id/icon_camera"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_options"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="-18dp"/>
+    </LinearLayout>
+
+
+
+
+    <!-- Gallery RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewGallery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tvRecents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
