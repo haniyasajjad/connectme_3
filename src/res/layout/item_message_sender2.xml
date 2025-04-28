@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, How are you?"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:background="@drawable/message_bubble_sender2"
+        android:padding="8dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:32"
+        android:textSize="12sp"
+        android:textColor="#ABABAB"
+        android:paddingTop="4dp" />
+
+</LinearLayout>
