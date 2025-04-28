@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Bigger Circle Background -->
+    <path
+        android:fillColor="#726252"
+        android:pathData="M 16,2
+                         A 14,14 0 1,1 15.99,2
+                         Z"/>
+
+    <!-- Three Horizontal White Dots Centered -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 11,16
+                         A 1,1 0 1,1 10.99,16
+                         Z
+                         M 16,16
+                         A 1,1 0 1,1 15.99,16
+                         Z
+                         M 21,16
+                         A 1,1 0 1,1 20.99,16
+                         Z" />
+</vector>

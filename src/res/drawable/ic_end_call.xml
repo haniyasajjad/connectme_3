@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+    <!-- Perfectly Centered Bigger Circle Background -->
+    <path
+        android:fillColor="#B51805"
+        android:pathData="M 16,2
+                         A 14,14 0 1,1 15.99,2
+                         Z"/>
+
+    <!-- Group to Scale and Center the Icon -->
+    <group
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:translateX="4"
+        android:translateY="5.5"> <!-- Adjusted Y for downward movement -->
+
+        <!-- End Call Icon Centered -->
+        <path
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M16,11c-1.6,0 -3.15,0.25 -4.6,0.72v3.1c0,0.39 -0.23,0.74 -0.56,0.9 -0.98,0.49 -1.87,1.12 -2.66,1.85 -0.18,0.18 -0.43,0.28 -0.7,0.28 -0.28,0 -0.54,-0.11 -0.72,-0.29l-2.48,-2.48c-0.18,-0.18 -0.29,-0.43 -0.29,-0.71 0,-0.28 0.11,-0.54 0.29,-0.72C7.34,10.78 11.46,9 16,9s8.66,1.78 11.71,4.65c0.18,0.18 0.29,0.43 0.29,0.71 0,0.28 -0.11,0.54 -0.29,0.72l-2.48,2.48c-0.18,0.18 -0.43,0.29 -0.71,0.29 -0.27,0 -0.52,-0.11 -0.7,-0.28 -0.79,-0.73 -1.68,-1.36 -2.66,-1.85 -0.33,-0.16 -0.56,-0.51 -0.56,-0.9v-3.1C19.15,11.25 17.6,11 16,11z" />
+    </group>
+</vector>

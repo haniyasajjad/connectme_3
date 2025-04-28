@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="650"
+    android:viewportHeight="650">
+
+    <!-- Background Circle with Facebook-like Smooth Edges -->
+    <path
+        android:pathData="M325,25a300,300 0 1,1 -1,0z"
+        android:fillColor="#3E2C1A"
+        android:fillType="nonZero"/>
+
+    <!-- "G" Letter -->
+    <path
+        android:pathData="M200,325c30,82 118,95 171,60h62v48A192,192 0,0 1,137 374"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="m433,433a140,175 0,0 0,53 -179H307v74h102q-7,37 -38,57"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="m137,374a208,200 0,0 1,0 -171l63,49q-12,37 0,73"
+        android:fillColor="#FFFFFF"/>
+    <path
+        android:pathData="m200,252c22,-69 116,-109 179,-50l55,-54c-78,-75 -230,-72 -297,55"
+        android:fillColor="#FFFFFF"/>
+</vector>

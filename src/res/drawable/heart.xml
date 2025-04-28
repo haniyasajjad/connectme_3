@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="45dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Deeper V-Shape Heart -->
+    <path
+        android:fillColor="@android:color/white"
+        android:strokeColor="#463121"
+        android:strokeWidth="10"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="
+            M50,85
+            C15,55 5,30 25,10
+            C40,-5 50,15 50,15
+            C50,15 60,-5 75,10
+            C95,30 85,55 50,85 Z"/>
+</vector>
